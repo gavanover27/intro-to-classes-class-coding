@@ -1,9 +1,9 @@
 class Animal:
     """Animal class"""
-    def __init__(self, species, age):
+    def __init__(self, species, age, gender):
         self._species = species
         self._age = age
-
+        self._gender = gender
     @property
     def species(self):
         return self._species
@@ -11,6 +11,10 @@ class Animal:
     @property
     def age(self):
         return self._age
+    
+    @property
+    def gender(self):
+        return self._gender
     
     @species.setter
     def species(self, new_species):
@@ -28,3 +32,6 @@ class Animal:
     
     def die(self):
         print('Dying')
+    
+    def reproduce(self):
+        print('reproducing')

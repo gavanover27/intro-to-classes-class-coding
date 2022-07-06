@@ -1,20 +1,10 @@
 class Vehicle:
     """Vehicle class"""
-    def __init__(self, make, model, year, color, miles, mpg):
-        self._make = make
-        self._model = model
+    def __init__(self, year, color, numberofWheels, capacity):
         self._year = year
         self._color = color
-        self._miles = miles
-        self._mpg = mpg
-
-    @property
-    def make(self):
-        return self._make
-
-    @property
-    def model(self):
-        return self._model
+        self._numberofWheels = numberofWheels
+        self._capacity = capacity
 
     @property
     def year(self):
@@ -25,20 +15,12 @@ class Vehicle:
         return self._color
     
     @property
-    def miles(self):
-        return self._miles
+    def numberofWheels(self):
+        return self._numberofWheels
 
     @property
-    def mpg(self):
-        return self._mpg
-
-    @make.setter
-    def make(self, new_make):
-        self._make = new_make
-
-    @model.setter
-    def model(self, new_model):
-        self._model = new_model
+    def capacity(self):
+        return self._capacity
 
     @year.setter
     def year(self, new_year):
@@ -48,13 +30,13 @@ class Vehicle:
     def author(self, new_author):
         self._color = new_color
 
-    @miles.setter
-    def miles(self, new_miles):
-        self._miles = new_miles
+    @numberofWheels.setter
+    def numberofWheels(self, new_numberofWheels):
+        self._numberofWheels = new_numberofWheels
 
-    @mpg.setter
-    def mpg(self, new_mpg):
-        self._mpg = new_mpg
+    @capacity.setter
+    def capacity(self, new_capacity):
+        self._capacity = new_capacity
 
     def start(self):
         print('Starting')

@@ -1,0 +1,34 @@
+Animal
+------
++ species: str
++ age: int
++ gender: str
+------
++ move()
++ eat()
++ die()
++ reproduce()
+
+Book
+------
++ author: str
++ title: str
++ publisher: str
++ release year: int
++ pagecount: int
+------
++ open()
++ close()
++ read()
++ flippage()
+
+Vehicle
+------
++ year: int
++ color: str
++ numberofwheels: int
++ capacity: int
+------
++ start()
++ move()
++ stop()
